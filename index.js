@@ -1,4 +1,6 @@
-document.getElementById("btn").onclick = function(){
+var txt = document.getElementById("message");
+
+txt.addEventListener("input", function() {
     var txt = document.getElementById("message").value;
     var caracteres = document.getElementById("caracteres")
     var word = document.getElementById("words")
@@ -9,4 +11,4 @@ document.getElementById("btn").onclick = function(){
         caracteres.innerHTML = "Characters: 0";
         word.innerHTML = "Words: 0";
     }
-}
+})
